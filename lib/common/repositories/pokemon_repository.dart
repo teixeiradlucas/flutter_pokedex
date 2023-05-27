@@ -21,7 +21,7 @@ class PokemonRepository implements IPokemonRepository {
       final list = json["pokemon"] as List<dynamic>;
       return list.map((e) => Pokemon.fromMap(e)).toList();
     } catch (e) {
-      throw Failure(message: "Pokemon não encontradosss");
+      throw Failure(message: "Pokemon não encontrado");
     }
   }
 }
